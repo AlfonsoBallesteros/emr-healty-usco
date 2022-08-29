@@ -17,10 +17,8 @@ public class MedicineDTO implements Serializable {
 
     private UUID id;
 
-    @Column(name = "name")
     private String name;
 
-    @Column(name = "filing")
     private String filing;
 
     @Override

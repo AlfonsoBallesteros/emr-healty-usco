@@ -5,6 +5,7 @@ import com.prueba.usco.domain.Diagnosis;
 import com.prueba.usco.service.dto.CityDepartmentDTO;
 import com.prueba.usco.service.dto.DiagnosisDTO;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 
 import java.util.UUID;
 

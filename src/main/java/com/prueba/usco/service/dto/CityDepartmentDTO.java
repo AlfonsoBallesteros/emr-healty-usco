@@ -21,7 +21,7 @@ public class CityDepartmentDTO {
     @Column(name = "code")
     private String code;
 
-    private CityDepartmentDTO parentId;
+    private CityDepartmentDTO parent;
 
     @Override
     public boolean equals(Object o) {

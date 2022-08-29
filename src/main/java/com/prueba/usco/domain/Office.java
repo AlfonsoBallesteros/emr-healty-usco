@@ -34,6 +34,9 @@ public class Office extends AbstractAuditingEntity implements Serializable {
     @Column(name = "address")
     private String address;
 
+    @Column(name = "city_id")
+    private Long cityId;
+
     @ManyToOne
     @JoinColumn(name = "city_id", insertable = false, updatable = false)
     private CityDepartment city;

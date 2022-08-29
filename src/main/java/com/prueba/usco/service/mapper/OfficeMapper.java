@@ -12,10 +12,8 @@ import java.util.UUID;
 @Mapper(componentModel = "spring", uses = {CityDepartmentMapper.class})
 public interface OfficeMapper extends EntityMapper<OfficeDTO, Office> {
 
-    @Mapping(source = "city.id", target = "cityId")
     OfficeDTO toDto(Office office);
 
-    @Mapping(source = "cityId", target = "city")
     Office toEntity(OfficeDTO officeDTO);
 
     default Office fromId(UUID id) {

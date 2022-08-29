@@ -28,13 +28,13 @@ public class CityDepartmentResource {
 
     @GetMapping("/departments")
     public ResponseEntity<List<CityDepartmentDTO>> getAllDepartment(@PageableDefault(size = 10) Pageable pageable) {
-        List<CityDepartmentDTO> cityDepartments= cityDepartmentService.findAllDepartment(pageable);
+        List<CityDepartmentDTO> cityDepartments = cityDepartmentService.findAllDepartment(pageable);
         return ResponseEntity.ok().body(cityDepartments);
     }
 
     @GetMapping("/city/{department-id}")
-    public ResponseEntity<List<CityDepartmentDTO>> getAllDepartment(@RequestHeader(value = "department-id", required = false) final UUID id, @PageableDefault(size = 10) Pageable pageable) {
-        List<CityDepartmentDTO> cityDepartments= cityDepartmentService.findAllCity(id, pageable);
+    public ResponseEntity<List<CityDepartmentDTO>> getAllCity(@PageableDefault(size = 10) Pageable pageable, @PathVariable("department-id") String id) {
+        List<CityDepartmentDTO> cityDepartments= cityDepartmentService.findAllCity(Long.valueOf(id), pageable);
         return ResponseEntity.ok().body(cityDepartments);
     }
 }

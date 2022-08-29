@@ -13,10 +13,8 @@ import java.util.UUID;
 @Mapper(componentModel = "spring", uses = {AppointmentMapper.class})
 public interface DiagnosisMapper extends EntityMapper<DiagnosisDTO, Diagnosis> {
 
-    @Mapping(source = "appointment.id", target = "appointmentId")
     DiagnosisDTO toDto(Diagnosis diagnosis);
 
-    @Mapping(source = "appointmentId", target = "appointment")
     Diagnosis toEntity(DiagnosisDTO diagnosisDTO);
 
     default Diagnosis fromId(UUID id) {

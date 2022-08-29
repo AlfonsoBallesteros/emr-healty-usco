@@ -2,7 +2,9 @@ package com.prueba.usco.web.rest;
 
 import com.prueba.usco.security.AuthoritiesConstants;
 import com.prueba.usco.service.AppointmentService;
+import com.prueba.usco.service.UserService;
 import com.prueba.usco.service.dto.AppointmentDTO;
+import com.prueba.usco.service.dto.UserDTO;
 import com.prueba.usco.web.rest.input.CanceledAppointmentInput;
 import com.prueba.usco.web.rest.input.CreateAppointmentInput;
 import lombok.AllArgsConstructor;
@@ -27,10 +29,16 @@ public class AppointmentResource {
 
     private final AppointmentService appointmentService;
 
+    private final UserService userService;
+
     @GetMapping("/appointments")
     public ResponseEntity<List<AppointmentDTO>> getAllAppointment(@PageableDefault(size = 10) Pageable pageable) {
-        List<AppointmentDTO> appointment= appointmentService.findAll(pageable);
-        return ResponseEntity.ok().body(appointment);
+        return userService
+                .getUserWithAuthorities()
+                .map(UserDTO::new)
+                .map(UserDTO::getId)
+                .map(u -> ResponseEntity.ok().body(appointmentService.findAll(u, pageable)))
+                .orElseGet(() -> ResponseEntity.noContent().build());
     }
 
     @PostMapping("/appointment/canceled")

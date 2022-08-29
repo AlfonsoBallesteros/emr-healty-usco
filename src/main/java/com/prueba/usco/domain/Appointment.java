@@ -40,6 +40,15 @@ public class Appointment extends AbstractAuditingEntity implements Serializable 
     @Column(name = "justification")
     private String justification;
 
+    @Column(name = "user_id")
+    private UUID userId;
+
+    @Column(name = "doctor_id")
+    private UUID doctorId;
+
+    @Column(name = "office_id")
+    private UUID officeId;
+
     @ManyToOne
     @JoinColumn(name = "user_id", insertable = false, updatable = false)
     private User user;

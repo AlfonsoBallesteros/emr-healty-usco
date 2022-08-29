@@ -35,9 +35,9 @@ public class AppointmentService {
     }
 
     @Transactional(readOnly = true)
-    public List<AppointmentDTO> findAll(Pageable pageable) {
+    public List<AppointmentDTO> findAll(UUID doctorId, Pageable pageable) {
         log.debug("Request to get all banks {}", pageable);
-        return appointmentRepository.findAll(pageable).stream()
+        return appointmentRepository.findAllByDoctorId(doctorId, pageable).stream()
                 .map(appointmentMapper::toDto)
                 .collect(Collectors.toList());
     }

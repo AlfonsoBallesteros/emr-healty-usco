@@ -26,7 +26,7 @@ public class OfficeService {
     private final OfficeMapper officeMapper;
 
     public OfficeDTO save(OfficeDTO officeDTO) {
-        log.debug("Request to save debt : {}", officeDTO);
+        log.debug("Request to save office : {}", officeDTO);
         Office office = officeMapper.toEntity(officeDTO);
         office = officeRepository.save(office);
         return officeMapper.toDto(office);

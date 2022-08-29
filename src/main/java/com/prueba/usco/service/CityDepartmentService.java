@@ -37,7 +37,7 @@ public class CityDepartmentService {
     }
 
     @Transactional(readOnly = true)
-    public List<CityDepartmentDTO> findAllCity(UUID city, Pageable pageable) {
+    public List<CityDepartmentDTO> findAllCity(Long city, Pageable pageable) {
         log.debug("Request to get all banks {}", pageable);
         return cityDepartmentRepository.findAllByParentId(city, pageable).stream()
                 .map(cityDepartmentMapper::toDto)

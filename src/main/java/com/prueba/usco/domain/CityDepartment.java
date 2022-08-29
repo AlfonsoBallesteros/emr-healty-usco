@@ -14,7 +14,7 @@ import java.util.UUID;
 @Getter
 @Setter
 @ToString
-public class CityDepartment extends AbstractAuditingEntity implements Serializable {
+public class CityDepartment implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -29,9 +29,12 @@ public class CityDepartment extends AbstractAuditingEntity implements Serializab
     @Column(name = "code")
     private String code;
 
+    @Column(name = "parent_id")
+    private Long parentId;
+
     @ManyToOne
     @JoinColumn(name = "parent_id", insertable = false, updatable = false)
-    private CityDepartment parentId;
+    private CityDepartment parent;
 
     @Override
     public boolean equals(Object o) {

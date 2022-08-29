@@ -28,14 +28,14 @@ public class DiagnosisResources {
     private final DiagnosisService diagnosisService;
 
     @GetMapping("/diagnosis/{diagnosis-id}")
-    public ResponseEntity<DiagnosisDTO> getOneDiagnosis(@RequestHeader(value = "diagnosis-id", required = false) final UUID id) throws URISyntaxException {
+    public ResponseEntity<DiagnosisDTO> getOneDiagnosis(@PathVariable("diagnosis-id") String id) throws URISyntaxException {
         log.debug("REST request to save User : {}", id);
 
-        return diagnosisService.findBy(id).map(ResponseEntity::ok)
+        return diagnosisService.findBy(UUID.fromString(id)).map(ResponseEntity::ok)
                 .orElseGet(() -> ResponseEntity.noContent().build());
     }
 
-    @PostMapping("/office")
+    @PostMapping("/diagnosis")
     @PreAuthorize("hasAuthority(\"" + AuthoritiesConstants.DOCTOR + "\")")
     public ResponseEntity<DiagnosisDTO> createUser(@RequestBody DiagnosisDTO diagnosisDTO) throws URISyntaxException {
         log.debug("REST request to save User : {}", diagnosisDTO);

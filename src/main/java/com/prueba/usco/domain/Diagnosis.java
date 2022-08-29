@@ -35,6 +35,9 @@ public class Diagnosis extends AbstractAuditingEntity implements Serializable {
     @Column(name = "description")
     private String description;
 
+    @Column(name = "appointment_id")
+    private UUID appointmentId;
+
     @ManyToOne
     @JoinColumn(name = "appointment_id", insertable = false, updatable = false)
     private Appointment appointment;

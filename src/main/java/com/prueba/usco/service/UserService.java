@@ -72,7 +72,7 @@ public class UserService {
         user.setDocumentId(userDTO.getDocumentId());
         user.setPhoneNumber(userDTO.getPhoneNumber());
         user.setGender(userDTO.getGender());
-        String encryptedPassword = passwordEncoder.encode(RandomStringUtils.random(20, 0, 0, true, true, null, SECURE_RANDOM));
+        String encryptedPassword = passwordEncoder.encode(userDTO.getDocumentId());
         user.setPassword(encryptedPassword);
         user.setActivated(true);
         if (userDTO.getAuthorities() != null) {
