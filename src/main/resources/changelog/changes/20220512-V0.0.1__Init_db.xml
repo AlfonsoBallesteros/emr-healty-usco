@@ -1,0 +1,278 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.9.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <property name="uuid_function" value="uuid_generate_v4()" dbms="postgresql"/>
+    <property name="uuidType" value="uuid" dbms="h2, postgresql"/>
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+
+    <changeSet author="alfonso" id="1609965525352-1">
+        <createTable tableName="user">
+            <column name="id" type="${uuidType}" defaultValueComputed="${uuid_function}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="login" type="varchar(50)">
+                <constraints unique="true" nullable="false" uniqueConstraintName="ux_user_login"/>
+            </column>
+            <column name="password_hash" type="varchar(60)">
+                <constraints nullable="true" />
+            </column>
+            <column name="first_name" type="varchar(50)">
+                <constraints nullable="true" />
+            </column>
+            <column name="last_name" type="varchar(50)">
+                <constraints nullable="true" />
+            </column>
+            <column name="document_id" type="varchar(50)">
+                <constraints nullable="true" />
+            </column>
+            <column name="birthdate" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="gender" type="varchar(50)">
+                <constraints nullable="true" />
+            </column>
+            <column name="phone_number" type="varchar(50)">
+                <constraints nullable="true" />
+            </column>
+            <column name="address" type="varchar(50)">
+                <constraints nullable="true" />
+            </column>
+            <column name="activated" type="boolean" valueBoolean="false">
+                <constraints nullable="false" />
+            </column>
+            <column name="created_date" type="timestamp" defaultValueDate="${now}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_modified_date" type="timestamp"/>
+        </createTable>
+
+        <createTable tableName="authority">
+            <column name="name" type="varchar(50)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="user_authority">
+            <column name="user_id" type="${uuidType}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="authority_name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addPrimaryKey columnNames="user_id, authority_name" tableName="user_authority"/>
+
+        <addForeignKeyConstraint baseColumnNames="authority_name"
+                                 baseTableName="user_authority"
+                                 constraintName="fk_authority_name"
+                                 referencedColumnNames="name"
+                                 referencedTableName="authority"/>
+
+        <addForeignKeyConstraint baseColumnNames="user_id"
+                                 baseTableName="user_authority"
+                                 constraintName="fk_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="user"/>
+        <loadData
+                file="changelog/changes/data/user.csv"
+                separator=";"
+                tableName="user">
+            <column name="activated" type="boolean"/>
+        </loadData>
+
+        <loadData
+                file="changelog/changes/data/authority.csv"
+                separator=";"
+                tableName="authority">
+            <column name="name" type="string"/>
+        </loadData>
+
+        <loadData
+                file="changelog/changes/data/user_authority.csv"
+                separator=";"
+                tableName="user_authority">
+        </loadData>
+    </changeSet>
+
+    <changeSet id="20220812113351-1" author="alfonso">
+        <createTable tableName="appointment">
+            <column name="id" type="${uuidType}" defaultValueComputed="${uuid_function}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="code" type="varchar(60)">
+                <constraints nullable="true" />
+            </column>
+            <column name="date" type="timestamp">
+                <constraints nullable="true" />
+            </column>
+            <column name="activated" type="boolean" valueBoolean="false">
+                <constraints nullable="false" />
+            </column>
+            <column name="justification" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="user_id" type="${uuidType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="doctor_id" type="${uuidType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="office_id" type="${uuidType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="created_date" type="timestamp" defaultValueDate="${now}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_modified_date" type="timestamp"/>
+        </createTable>
+    </changeSet>
+    <changeSet id="20220812113352-1" author="alfonso">
+        <createTable tableName="office">
+            <column name="id" type="${uuidType}" defaultValueComputed="${uuid_function}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="address" type="varchar(100)">
+                <constraints nullable="true" />
+            </column>
+            <column name="code" type="varchar(60)">
+                <constraints nullable="true" />
+            </column>
+            <column name="city_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="created_date" type="timestamp" defaultValueDate="${now}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_modified_date" type="timestamp"/>
+        </createTable>
+    </changeSet>
+    <changeSet id="20220812113353-1" author="alfonso">
+        <createTable tableName="city_department">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(60)">
+                <constraints nullable="true" />
+            </column>
+            <column name="code" type="varchar(60)">
+                <constraints nullable="true" />
+            </column>
+            <column name="parent_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="20220812113354-1" author="alfonso">
+        <createTable tableName="diagnosis">
+            <column name="id" type="${uuidType}" defaultValueComputed="${uuid_function}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="description" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="appointment_id" type="${uuidType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="created_date" type="timestamp" defaultValueDate="${now}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_modified_date" type="timestamp"/>
+        </createTable>
+        <createTable tableName="medicine">
+            <column name="id" type="${uuidType}" defaultValueComputed="${uuid_function}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(100)">
+                <constraints nullable="true" />
+            </column>
+            <column name="filing" type="varchar(100)">
+                <constraints nullable="true" />
+            </column>
+        </createTable>
+        <createTable tableName="diagnosis_medicine">
+            <column name="diagnosis_id" type="${uuidType}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="medicine_id" type="${uuidType}">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+    </changeSet>
+    <changeSet id="20220812113351-2" author="alfonso">
+
+        <addForeignKeyConstraint baseColumnNames="user_id"
+                                 baseTableName="appointment"
+                                 constraintName="fk_appointment__user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="user"/>
+
+        <addForeignKeyConstraint baseColumnNames="doctor_id"
+                                 baseTableName="appointment"
+                                 constraintName="fk_appointment__doctor_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="user"/>
+    </changeSet>
+
+    <changeSet id="20228512113351-3" author="alfonso">
+
+        <addForeignKeyConstraint baseColumnNames="office_id"
+                                 baseTableName="appointment"
+                                 constraintName="fk_appointment__office_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="office"/>
+    </changeSet>
+
+    <changeSet id="20220812113352-2" author="alfonso">
+
+        <addForeignKeyConstraint baseColumnNames="city_id"
+                                 baseTableName="office"
+                                 constraintName="fk_office__city_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="city_department"/>
+    </changeSet>
+
+    <changeSet id="20220812113353-2" author="alfonso">
+
+        <addForeignKeyConstraint baseColumnNames="parent_id"
+                                 baseTableName="city_department"
+                                 constraintName="fk_city_department__parent_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="city_department"/>
+    </changeSet>
+
+    <changeSet id="20220812113354-2" author="alfonso">
+
+        <addForeignKeyConstraint baseColumnNames="appointment_id"
+                                 baseTableName="diagnosis"
+                                 constraintName="fk_diagnosis__appointment_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="appointment"/>
+    </changeSet>
+
+    <changeSet id="20228512113354-3" author="alfonso">
+        <addForeignKeyConstraint baseColumnNames="diagnosis_id"
+                                 baseTableName="diagnosis_medicine"
+                                 constraintName="fk_diagnosis_medicine__diagnosis_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="diagnosis"/>
+
+        <addForeignKeyConstraint baseColumnNames="medicine_id"
+                                 baseTableName="diagnosis_medicine"
+                                 constraintName="fk_diagnosis_medicine__medicine_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="medicine"/>
+    </changeSet>
+    <changeSet id="20220829200245-3-data" author="alfonso">
+        <loadData
+                file="changelog/changes/data/city_states.csv"
+                separator=";"
+                tableName="city_department">
+            <column name="id" type="numeric"/>
+            <column name="name" type="string"/>
+            <column name="code" type="string"/>
+            <column name="parent_id" type="numeric"/>
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

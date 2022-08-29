@@ -1,0 +1,5 @@
+id;login;password_hash;first_name;last_name;document_id;birthdate;gender;phone_number;address;activated
+b571b8a9-5083-4d39-8bd8-2cbade6cea02;admin;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;Administrator;Administrator;1020145258;2021-02-08;MALE;315823659;calle;true
+126c3b5e-b775-4879-a61c-6f9bf40a1b89;user;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;User;User;1250362569;2021-02-08;MALE;3215632569;carrera;true
+0956efad-8748-4818-b07c-99c0ddf91e0b;roadstrategistauxiliary;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Road; Strategist auxiliary;1223658963;2021-02-08;FEMALE;3695821452;avenida;true
+bf9d9787-ba78-4977-9573-247d4b2dc8ed;elmaster;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;el master;"";1523698534;2021-02-08;MALE;3215478563;transversal;true

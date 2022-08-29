@@ -1,0 +1,1157 @@
+id;name;code;parent_id
+2895;Amazonas;AMA;null
+2890;Antioquia;ANT;null
+2881;Arauca;ARA;null
+2900;"Archipiélago de San Andrés; Providencia y Santa Catalina";SAP;null
+2880;Atlántico;ATL;null
+4921;Bogotá D.C.;DC;null
+2893;Bolívar;BOL;null
+2903;Boyacá;BOY;null
+2887;Caldas;CAL;null
+2891;Caquetá;CAQ;null
+2892;Casanare;CAS;null
+2884;Cauca;CAU;null
+2899;Cesar;CES;null
+2876;Chocó;CHO;null
+2898;Córdoba;COR;null
+2875;Cundinamarca;CUN;null
+2882;Guainía;GUA;null
+2888;Guaviare;GUV;null
+4871;Huila;HUI;null
+2889;La Guajira;LAG;null
+2886;Magdalena;MAG;null
+2878;Meta;MET;null
+2897;Nariño;NAR;null
+2877;Norte de Santander;NSA;null
+2896;Putumayo;PUT;null
+2874;Quindío;QUI;null
+2879;Risaralda;RIS;null
+2901;Santander;SAN;null
+2902;Sucre;SUC;null
+2883;Tolima;TOL;null
+2904;Valle del Cauca;VAC;null
+2885;Vaupés;VAU;null
+2894;Vichada;VID;null
+20807;El Encanto;null;2895
+20977;La Chorrera;null;2895
+20998;La Pedrera;null;2895
+21014;La Victoria;null;2895
+21027;Leticia;null;2895
+21086;Miriti - Paraná;null;2895
+21231;Puerto Alegría;null;2895
+21232;Puerto Arica;null;2895
+21249;Puerto Nariño;null;2895
+21256;Puerto Santander;null;2895
+21512;Tarapacá;null;2895
+20485;Abejorral;null;2890
+20487;Abriaquí;null;2890
+20504;Alejandría;null;2890
+20512;Amagá;null;2890
+20513;Amalfi;null;2890
+20520;Andes;null;2890
+20521;Angelópolis;null;2890
+20522;Angostura;null;2890
+20747;Anorí;null;2890
+20527;Anza;null;2890
+20529;Apartadó;null;2890
+20541;Arboletes;null;2890
+20544;Argelia;null;2890
+20551;Armenia;null;2890
+20566;Barbosa;null;2890
+20579;Bello;null;2890
+20580;Belmira;null;2890
+20588;Betania;null;2890
+20589;Betulia;null;2890
+20602;Briceño;null;2890
+20613;Buriticá;null;2890
+20763;Cáceres;null;2890
+20621;Caicedo;null;2890
+20631;Caldas;null;2890
+20638;Campamento;null;2890
+20667;Cañasgordas;null;2890
+20649;Caracolí;null;2890
+20650;Caramanta;null;2890
+20652;Carepa;null;2890
+20658;Carolina;null;2890
+20666;Caucasia;null;2890
+20683;Chigorodó;null;2890
+20710;Cisneros;null;2890
+20711;Ciudad Bolívar;null;2890
+20716;Cocorná;null;2890
+20724;Concepción;null;2890
+20727;Concordia;null;2890
+20735;Copacabana;null;2890
+20773;Dabeiba;null;2890
+20781;Donmatías;null;2890
+20785;Ebéjico;null;2890
+20786;El Bagre;null;2890
+20656;El Carmen de Viboral;null;2890
+21441;El Santuario;null;2890
+20838;Entrerrios;null;2890
+20840;Envigado;null;2890
+20859;Fredonia;null;2890
+20861;Frontino;null;2890
+20885;Giraldo;null;2890
+20888;Girardota;null;2890
+20931;Gómez Plata;null;2890
+20893;Granada;null;2890
+20901;Guadalupe;null;2890
+20913;Guarne;null;2890
+20915;Guatapé;null;2890
+20939;Heliconia;null;2890
+20942;Hispania;null;2890
+20953;Itagui;null;2890
+20955;Ituango;null;2890
+20959;Jardín;null;2890
+20961;Jericó;null;2890
+20974;La Ceja;null;2890
+20983;La Estrella;null;2890
+21000;La Pintada;null;2890
+21009;La Unión;null;2890
+21028;Liborina;null;2890
+21044;Maceo;null;2890
+21066;Marinilla;null;2890
+21074;Medellín;null;2890
+21097;Montebello;null;2890
+21120;Murindó;null;2890
+21121;Mutatá;null;2890
+21126;Nariño;null;2890
+21129;Nechí;null;2890
+21130;Necoclí;null;2890
+21149;Olaya;null;2890
+21197;Peñol;null;2890
+21194;Peque;null;2890
+21227;Pueblorrico;null;2890
+21234;Puerto Berrío;null;2890
+21248;Puerto Nare;null;2890
+21258;Puerto Triunfo;null;2890
+21281;Remedios;null;2890
+21286;Retiro;null;2890
+21293;Rionegro;null;2890
+21311;Sabanalarga;null;2890
+21314;Sabaneta;null;2890
+21323;Salgar;null;2890
+21330;San Andrés de Cuerquía;null;2890
+21345;San Carlos;null;2890
+21357;San Francisco;null;2890
+21362;San Jerónimo;null;2890
+21366;San José de la Montaña;null;2890
+21376;San Juan de Urabá;null;2890
+149253;San Luis;null;2890
+21117;San Pedro de los Milagros;null;2890
+21399;San Pedro de Uraba;null;2890
+21402;San Rafael;null;2890
+21403;San Roque;null;2890
+21407;San Vicente Ferrer;null;2890
+21414;Santa Bárbara;null;2890
+21417;Santa Fe de Antioquia;null;2890
+21425;Santa Rosa de Osos;null;2890
+21439;Santo Domingo;null;2890
+21449;Segovia;null;2890
+21474;Sonson;null;2890
+21476;Sopetrán;null;2890
+21562;Támesis;null;2890
+21513;Tarazá;null;2890
+21514;Tarso;null;2890
+21532;Titiribí;null;2890
+21537;Toledo;null;2890
+21557;Turbo;null;2890
+21572;Uramita;null;2890
+21574;Urrao;null;2890
+21577;Valdivia;null;2890
+21584;Valparaíso;null;2890
+21585;Vegachí;null;2890
+21588;Venecia;null;2890
+21595;Vigía del Fuerte;null;2890
+21621;Yalí;null;2890
+21622;Yarumal;null;2890
+21624;Yolombó;null;2890
+21625;Yondó;null;2890
+21632;Zaragoza;null;2890
+20536;Arauca;null;2881
+20537;Arauquita;null;2881
+20746;Cravo Norte;null;2881
+20856;Fortul;null;2881
+21253;Puerto Rondón;null;2881
+21444;Saravena;null;2881
+21508;Tame;null;2881
+21224;Providencia;null;2900
+21331;San Andrés;null;2900
+20564;Baranoa;null;2880
+20574;Barranquilla;null;2880
+20640;Campo de la Cruz;null;2880
+20643;Candelaria;null;2880
+20876;Galapa;null;2880
+20966;Juan de Acosta;null;2880
+21038;Luruaco;null;2880
+21053;Malambo;null;2880
+21055;Manatí;null;2880
+21171;Palmar de Varela;null;2880
+21208;Piojó;null;2880
+21217;Polonuevo;null;2880
+21218;Ponedera;null;2880
+21238;Puerto Colombia;null;2880
+21283;Repelón;null;2880
+21309;Sabanagrande;null;2880
+21312;Sabanalarga;null;2880
+21420;Santa Lucía;null;2880
+21440;Santo Tomás;null;2880
+21472;Soledad;null;2880
+21485;Suan;null;2880
+21550;Tubará;null;2880
+21576;Usiacurí;null;2880
+149237;Bogotá D.C.;null;4921
+20490;Achí;null;2893
+20510;Altos del Rosario;null;2893
+20543;Arenal;null;2893
+20549;Arjona;null;2893
+20554;Arroyohondo;null;2893
+20573;Barranco de Loba;null;2893
+20628;Calamar;null;2893
+20645;Cantagallo;null;2893
+20659;Cartagena de Indias;null;2893
+20707;Cicuco;null;2893
+20715;Clemencia;null;2893
+20770;Córdoba;null;2893
+20796;El Carmen de Bolívar;null;2893
+20810;El Guamo;null;2893
+20818;El Peñón;null;2893
+20935;Hatillo de Loba;null;2893
+21048;Magangué;null;2893
+21050;Mahates;null;2893
+21065;Margarita;null;2893
+21072;María la Baja;null;2893
+21093;Mompós;null;2893
+21098;Montecristo;null;2893
+21104;Morales;null;2893
+21138;Norosí;null;2893
+21207;Pinillos;null;2893
+21280;Regidor;null;2893
+21306;Río Viejo;null;2893
+21350;San Cristóbal;null;2893
+21353;San Estanislao;null;2893
+21355;San Fernando;null;2893
+21360;San Jacinto;null;2893
+21361;San Jacinto del Cauca;null;2893
+21372;San Juan Nepomuceno;null;2893
+21386;San Martín de Loba;null;2893
+21393;San Pablo;null;2893
+21416;Santa Catalina;null;2893
+21423;Santa Rosa;null;2893
+21427;Santa Rosa del Sur;null;2893
+21460;Simití;null;2893
+21477;Soplaviento;null;2893
+21505;Talaigua Nuevo;null;2893
+21531;Tiquisio;null;2893
+21555;Turbaco;null;2893
+21556;Turbaná;null;2893
+21609;Villanueva;null;2893
+21629;Zambrano;null;2893
+20507;Almeida;null;2903
+20532;Aquitania;null;2903
+20542;Arcabuco;null;2903
+20583;Belén;null;2903
+20587;Berbeo;null;2903
+20591;Betéitiva;null;2903
+20593;Boavita;null;2903
+20600;Boyacá;null;2903
+20601;Briceño;null;2903
+20609;Buenavista;null;2903
+20614;Busbanzá;null;2903
+20632;Caldas;null;2903
+20641;Campohermoso;null;2903
+20670;Cerinza;null;2903
+20687;Chinavita;null;2903
+20693;Chiquinquirá;null;2903
+20706;Chíquiza;null;2903
+20695;Chiscas;null;2903
+20696;Chita;null;2903
+20698;Chitaraque;null;2903
+20699;Chivatá;null;2903
+20701;Chivor;null;2903
+20714;Ciénega;null;2903
+20723;Combita;null;2903
+20736;Coper;null;2903
+20740;Corrales;null;2903
+20743;Covarachía;null;2903
+20750;Cubará;null;2903
+20751;Cucaita;null;2903
+20762;Cuítiva;null;2903
+20783;Duitama;null;2903
+20802;El Cocuy;null;2903
+20808;El Espino;null;2903
+20846;Firavitoba;null;2903
+20850;Floresta;null;2903
+20873;Gachantivá;null;2903
+20882;Gameza;null;2903
+20883;Garagoa;null;2903
+20896;Guacamayas;null;2903
+20918;Guateque;null;2903
+20924;Guayatá;null;2903
+20933;Güicán;null;2903
+20956;Iza;null;2903
+20960;Jenesano;null;2903
+20962;Jericó;null;2903
+20973;La Capilla;null;2903
+21010;La Uvita;null;2903
+21015;La Victoria;null;2903
+21018;Labranzagrande;null;2903
+21042;Macanal;null;2903
+21067;Maripí;null;2903
+21084;Miraflores;null;2903
+21094;Mongua;null;2903
+21095;Monguí;null;2903
+21096;Moniquirá;null;2903
+21110;Motavita;null;2903
+21123;Muzo;null;2903
+21135;Nobsa;null;2903
+21140;Nuevo Colón;null;2903
+21148;Oicatá;null;2903
+21156;Otanche;null;2903
+21158;Pachavita;null;2903
+21268;Páez;null;2903
+21166;Paipa;null;2903
+21168;Pajarito;null;2903
+21180;Panqueba;null;2903
+21186;Pauna;null;2903
+21187;Paya;null;2903
+21190;Paz de Río;null;2903
+21196;Pesca;null;2903
+21209;Pisba;null;2903
+21236;Puerto Boyacá;null;2903
+21276;Quípama;null;2903
+21278;Ramiriquí;null;2903
+21303;Ráquira;null;2903
+21300;Rondón;null;2903
+21315;Saboyá;null;2903
+21502;Sáchica;null;2903
+21324;Samacá;null;2903
+21352;San Eduardo;null;2903
+21368;San José de Pare;null;2903
+21380;San Luis de Gaceno;null;2903
+21387;San Mateo;null;2903
+21390;San Miguel de Sema;null;2903
+21394;San Pablo de Borbur;null;2903
+21422;Santa María;null;2903
+21426;Santa Rosa de Viterbo;null;2903
+21430;Santa Sofía;null;2903
+21433;Santana;null;2903
+21447;Sativanorte;null;2903
+21448;Sativasur;null;2903
+21452;Siachoque;null;2903
+21465;Soatá;null;2903
+21466;Socha;null;2903
+21469;Socotá;null;2903
+21470;Sogamoso;null;2903
+21473;Somondoco;null;2903
+21479;Sora;null;2903
+21480;Soracá;null;2903
+21481;Sotaquirá;null;2903
+21495;Susacón;null;2903
+21496;Sutamarchán;null;2903
+21498;Sutatenza;null;2903
+21515;Tasco;null;2903
+21521;Tenza;null;2903
+21523;Tibaná;null;2903
+21524;Tibasosa;null;2903
+21529;Tinjacá;null;2903
+21530;Tipacoque;null;2903
+21533;Toca;null;2903
+21536;Togüí;null;2903
+21563;Tópaga;null;2903
+21545;Tota;null;2903
+21553;Tunja;null;2903
+21554;Tununguá;null;2903
+21558;Turmequé;null;2903
+21559;Tuta;null;2903
+21560;Tutazá;null;2903
+21568;Umbita;null;2903
+21589;Ventaquemada;null;2903
+21598;Villa de Leyva;null;2903
+21615;Viracachá;null;2903
+21634;Zetaquira;null;2903
+20494;Aguadas;null;2887
+20525;Anserma;null;2887
+20534;Aranzazu;null;2887
+20576;Belalcázar;null;2887
+20688;Chinchiná;null;2887
+20844;Filadelfia;null;2887
+20981;La Dorada;null;2887
+20992;La Merced;null;2887
+21059;Manizales;null;2887
+21061;Manzanares;null;2887
+21068;Marmato;null;2887
+21069;Marquetalia;null;2887
+21071;Marulanda;null;2887
+21131;Neira;null;2887
+21137;Norcasia;null;2887
+21267;Pácora;null;2887
+21169;Palestina;null;2887
+21193;Pensilvania;null;2887
+21294;Riosucio;null;2887
+21296;Risaralda;null;2887
+21319;Salamina;null;2887
+21326;Samaná;null;2887
+21364;San José;null;2887
+21492;Supía;null;2887
+21594;Victoria;null;2887
+21605;Villamaría;null;2887
+21617;Viterbo;null;2887
+20499;Albania;null;2891
+20584;Belén de Los Andaquies;null;2891
+20660;Cartagena del Chairá;null;2891
+20759;Curillo;null;2891
+20805;El Doncello;null;2891
+20814;El Paujil;null;2891
+20849;Florencia;null;2891
+20994;La Montañita;null;2891
+21082;Milán;null;2891
+21105;Morelia;null;2891
+21251;Puerto Rico;null;2891
+21369;San José del Fragua;null;2891
+149254;San Vicente del Caguán;null;2891
+21471;Solano;null;2891
+149255;Solita;null;2891
+21583;Valparaíso;null;2891
+20495;Aguazul;null;2892
+20677;Chameza;null;2892
+20937;Hato Corozal;null;2892
+149243;La Salina;null;2892
+21062;Maní;null;2892
+21101;Monterrey;null;2892
+21141;Nunchía;null;2892
+21153;Orocué;null;2892
+149244;Paz de Ariporo;null;2892
+21220;Pore;null;2892
+21279;Recetor;null;2892
+21310;Sabanalarga;null;2892
+21501;Sácama;null;2892
+21381;San Luis de Palenque;null;2892
+21561;Támara;null;2892
+21516;Tauramena;null;2892
+21548;Trinidad;null;2892
+21607;Villanueva;null;2892
+21626;Yopal;null;2892
+20506;Almaguer;null;2884
+20545;Argelia;null;2884
+20562;Balboa;null;2884
+20599;Bolívar;null;2884
+20610;Buenos Aires;null;2884
+20625;Cajibío;null;2884
+20633;Caldono;null;2884
+20637;Caloto;null;2884
+20737;Corinto;null;2884
+20831;El Tambo;null;2884
+20848;Florencia;null;2884
+149241;Guachené;null;2884
+20909;Guapi;null;2884
+20948;Inzá;null;2884
+20957;Jambaló;null;2884
+21003;La Sierra;null;2884
+21011;La Vega;null;2884
+21041;López de Micay;null;2884
+21080;Mercaderes;null;2884
+21085;Miranda;null;2884
+21103;Morales;null;2884
+21161;Padilla;null;2884
+21163;Páez;null;2884
+21185;Patía;null;2884
+149245;Piamonte;null;2884
+21202;Piendamo;null;2884
+21219;Popayán;null;2884
+21257;Puerto Tejada;null;2884
+21263;Puracé;null;2884
+21301;Rosas;null;2884
+21404;San Sebastián;null;2884
+149250;Santa Rosa;null;2884
+21434;Santander de Quilichao;null;2884
+21457;Silvia;null;2884
+21482;Sotará;null;2884
+21499;Suárez;null;2884
+21489;Sucre;null;2884
+149257;Timbío;null;2884
+21528;Timbiquí;null;2884
+21542;Toribio;null;2884
+21546;Totoró;null;2884
+21597;Villa Rica;null;2884
+20492;Aguachica;null;2899
+20496;Agustín Codazzi;null;2899
+20555;Astrea;null;2899
+20575;Becerril;null;2899
+149238;Bosconia;null;2899
+20685;Chimichagua;null;2899
+20694;Chiriguaná;null;2899
+20761;Curumaní;null;2899
+20804;El Copey;null;2899
+20813;El Paso;null;2899
+20880;Gamarra;null;2899
+20890;González;null;2899
+20985;La Gloria;null;2899
+20987;La Jagua de Ibirico;null;2899
+20997;La Paz;null;2899
+21058;Manaure Balcón del Cesar;null;2899
+21164;Pailitas;null;2899
+21192;Pelaya;null;2899
+149247;Pueblo Bello;null;2899
+21307;Río de Oro;null;2899
+21328;San Alberto;null;2899
+21351;San Diego;null;2899
+21384;San Martín;null;2899
+21507;Tamalameque;null;2899
+21582;Valledupar;null;2899
+20489;Acandí;null;2876
+20509;Alto Baudó;null;2876
+20557;Atrato;null;2876
+20559;Bagadó;null;2876
+20560;Bahía Solano;null;2876
+20561;Bajo Baudó;null;2876
+20596;Bojayá;null;2876
+20657;Carmen del Darien;null;2876
+20767;Cértegui;null;2876
+20728;Condoto;null;2876
+20791;El Cantón de San Pablo;null;2876
+20795;El Carmen de Atrato;null;2876
+20952;Istmina;null;2876
+20969;Juradó;null;2876
+21418;Litoral del San Juan;null;2876
+21030;Lloró;null;2876
+21076;Medio Atrato;null;2876
+21077;Medio Baudó;null;2876
+21078;Medio San Juan;null;2876
+21143;Nóvita;null;2876
+21142;Nuquí;null;2876
+21272;Quibdó;null;2876
+21304;Río Iro;null;2876
+21305;Río Quito;null;2876
+21295;Riosucio;null;2876
+21371;San José del Palmar;null;2876
+21462;Sipí;null;2876
+21504;Tadó;null;2876
+21570;Unguía;null;2876
+21571;Unión Panamericana;null;2876
+20558;Ayapel;null;2898
+20608;Buenavista;null;2898
+20642;Canalete;null;2898
+20669;Cereté;null;2898
+20686;Chimá;null;2898
+20690;Chinú;null;2898
+20713;Ciénaga de Oro;null;2898
+20742;Cotorra;null;2898
+20970;La Apartada;null;2898
+21031;Lorica;null;2898
+21033;Los Córdobas;null;2898
+21092;Momil;null;2898
+21112;Moñitos;null;2898
+21099;Montelíbano;null;2898
+21102;Montería;null;2898
+21213;Planeta Rica;null;2898
+21225;Pueblo Nuevo;null;2898
+21241;Puerto Escondido;null;2898
+21245;Puerto Libertador;null;2898
+21266;Purísima;null;2898
+21316;Sahagún;null;2898
+21333;San Andrés de Sotavento;null;2898
+21335;San Antero;null;2898
+21343;San Bernardo del Viento;null;2898
+21346;San Carlos;null;2898
+149251;San José de Uré;null;2898
+21401;San Pelayo;null;2898
+21527;Tierralta;null;2898
+149258;Tuchín;null;2898
+21578;Valencia;null;2898
+20491;Agua de Dios;null;2875
+20501;Albán;null;2875
+20516;Anapoima;null;2875
+20523;Anolaima;null;2875
+20530;Apulo;null;2875
+20538;Arbeláez;null;2875
+20581;Beltrán;null;2875
+20592;Bituima;null;2875
+143873;Bogotá D.C.;null;2875
+20595;Bojacá;null;2875
+20615;Cabrera;null;2875
+20619;Cachipay;null;2875
+20626;Cajicá;null;2875
+20646;Caparrapí;null;2875
+20648;Caqueza;null;2875
+20655;Carmen de Carupa;null;2875
+20675;Chaguaní;null;2875
+20705;Chía;null;2875
+20691;Chipaque;null;2875
+20702;Choachí;null;2875
+20703;Chocontá;null;2875
+20718;Cogua;null;2875
+20741;Cota;null;2875
+20752;Cucunubá;null;2875
+20803;El Colegio;null;2875
+20817;El Peñón;null;2875
+20826;El Rosal;null;2875
+20842;Facatativá;null;2875
+20854;Fomeque;null;2875
+20857;Fosca;null;2875
+20866;Funza;null;2875
+20869;Fúquene;null;2875
+20867;Fusagasugá;null;2875
+20870;Gachala;null;2875
+20872;Gachancipá;null;2875
+20874;Gachetá;null;2875
+20879;Gama;null;2875
+20886;Girardot;null;2875
+20892;Granada;null;2875
+20898;Guachetá;null;2875
+20903;Guaduas;null;2875
+20914;Guasca;null;2875
+20916;Guataquí;null;2875
+20917;Guatavita;null;2875
+20921;Guayabal de Siquima;null;2875
+20923;Guayabetal;null;2875
+20925;Gutiérrez;null;2875
+20963;Jerusalén;null;2875
+20968;Junín;null;2875
+20972;La Calera;null;2875
+20993;La Mesa;null;2875
+20995;La Palma;null;2875
+20999;La Peña;null;2875
+21012;La Vega;null;2875
+21026;Lenguazaque;null;2875
+21045;Macheta;null;2875
+21047;Madrid;null;2875
+21060;Manta;null;2875
+21075;Medina;null;2875
+21109;Mosquera;null;2875
+21127;Nariño;null;2875
+21132;Nemocón;null;2875
+21133;Nilo;null;2875
+21134;Nimaima;null;2875
+21136;Nocaima;null;2875
+21159;Pacho;null;2875
+21165;Paime;null;2875
+21179;Pandi;null;2875
+21182;Paratebueno;null;2875
+21183;Pasca;null;2875
+21254;Puerto Salgar;null;2875
+21261;Pulí;null;2875
+21270;Quebradanegra;null;2875
+21271;Quetame;null;2875
+21275;Quipile;null;2875
+21287;Ricaurte;null;2875
+21338;San Antonio del Tequendama;null;2875
+21342;San Bernardo;null;2875
+21348;San Cayetano;null;2875
+21358;San Francisco;null;2875
+21375;San Juan de Río Seco;null;2875
+21446;Sasaima;null;2875
+21450;Sesquilé;null;2875
+21453;Sibaté;null;2875
+21456;Silvania;null;2875
+21459;Simijaca;null;2875
+21464;Soacha;null;2875
+21478;Sopó;null;2875
+21486;Subachoque;null;2875
+21490;Suesca;null;2875
+21491;Supatá;null;2875
+21494;Susa;null;2875
+21497;Sutatausa;null;2875
+21503;Tabio;null;2875
+21517;Tausa;null;2875
+21518;Tena;null;2875
+21520;Tenjo;null;2875
+21522;Tibacuy;null;2875
+21525;Tibirita;null;2875
+21534;Tocaima;null;2875
+21535;Tocancipá;null;2875
+21541;Topaipí;null;2875
+21565;Ubalá;null;2875
+21566;Ubaque;null;2875
+21569;Une;null;2875
+21640;Útica;null;2875
+21587;Venecia;null;2875
+21590;Vergara;null;2875
+21593;Vianí;null;2875
+21599;Villa de San Diego de Ubate;null;2875
+21603;Villagómez;null;2875
+21610;Villapinzón;null;2875
+21613;Villeta;null;2875
+21614;Viotá;null;2875
+21619;Yacopí;null;2875
+21635;Zipacón;null;2875
+21636;Zipaquirá;null;2875
+20572;Barranco Minas;null;2882
+20618;Cacahual;null;2882
+20949;Inírida;null;2882
+20986;La Guadalupe;null;2882
+21063;Mapiripana;null;2882
+21106;Morichal;null;2882
+21178;Pana Pana;null;2882
+21239;Puerto Colombia;null;2882
+21354;San Felipe;null;2882
+20627;Calamar;null;2888
+20823;El Retorno;null;2888
+21083;Miraflores;null;2888
+21370;San José del Guaviare;null;2888
+143877;Acevedo;null;4871
+143878;Aipe;null;4871
+143879;Algeciras;null;4871
+143880;Altamira;null;4871
+143881;Baraya;null;4871
+143882;Campoalegre;null;4871
+143883;Colombia;null;4871
+143884;El Agrado;null;4871
+143885;Elias;null;4871
+143886;Garzón;null;4871
+143887;Gigante;null;4871
+143888;Guadalupe;null;4871
+143889;Hobo;null;4871
+143890;Iquira;null;4871
+143891;Isnos;null;4871
+149242;La Argentina;null;4871
+143892;La Plata;null;4871
+143893;Nataga;null;4871
+143894;Neiva;null;4871
+143895;Oporapa;null;4871
+143896;Paicol;null;4871
+143897;Palermo;null;4871
+143898;Palestina;null;4871
+143899;Pital;null;4871
+143900;Pitalito;null;4871
+143901;Rivera;null;4871
+143902;Saladoblanco;null;4871
+143903;San Agustín;null;4871
+143904;Santa María;null;4871
+143905;Suaza;null;4871
+143906;Tarqui;null;4871
+143907;Tello;null;4871
+143908;Teruel;null;4871
+143909;Tesalia;null;4871
+143910;Timana;null;4871
+143911;Villavieja;null;4871
+143912;Yaguará;null;4871
+20498;Albania;null;2889
+20571;Barrancas;null;2889
+20776;Dibulla;null;2889
+20777;Distracción;null;2889
+20812;El Molino;null;2889
+20855;Fonseca;null;2889
+20938;Hatonuevo;null;2889
+20988;La Jagua del Pilar;null;2889
+21051;Maicao;null;2889
+21056;Manaure;null;2889
+21291;Riohacha;null;2889
+21377;San Juan del Cesar;null;2889
+21573;Uribia;null;2889
+21575;Urumita;null;2889
+21608;Villanueva;null;2889
+20505;Algarrobo;null;2886
+20533;Aracataca;null;2886
+20548;Ariguaní;null;2886
+20673;Cerro de San Antonio;null;2886
+20700;Chivolo;null;2886
+20712;Ciénaga;null;2886
+20726;Concordia;null;2886
+20787;El Banco;null;2886
+20820;El Piñon;null;2886
+20824;El Retén;null;2886
+20864;Fundación;null;2886
+20907;Guamal;null;2886
+21139;Nueva Granada;null;2886
+21191;Pedraza;null;2886
+21205;Pijiño del Carmen;null;2886
+21210;Pivijay;null;2886
+21214;Plato;null;2886
+21228;Puebloviejo;null;2886
+21282;Remolino;null;2886
+21313;Sabanas de San Angel;null;2886
+21318;Salamina;null;2886
+20606;San Sebastián de Buenavista;null;2886
+21409;San Zenón;null;2886
+21411;Santa Ana;null;2886
+21415;Santa Bárbara de Pinto;null;2886
+21421;Santa Marta;null;2886
+21463;Sitionuevo;null;2886
+21519;Tenerife;null;2886
+21631;Zapayán;null;2886
+21637;Zona Bananera;null;2886
+20488;Acacías;null;2878
+20569;Barranca de Upía;null;2878
+20617;Cabuyaro;null;2878
+20665;Castilla la Nueva;null;2878
+20749;Cubarral;null;2878
+20754;Cumaral;null;2878
+20790;El Calvario;null;2878
+20799;El Castillo;null;2878
+149240;El Dorado;null;2878
+20863;Fuente de Oro;null;2878
+20894;Granada;null;2878
+20906;Guamal;null;2878
+20990;La Macarena;null;2878
+21025;Lejanías;null;2878
+21064;Mapiripán;null;2878
+21081;Mesetas;null;2878
+21240;Puerto Concordia;null;2878
+21242;Puerto Gaitán;null;2878
+21246;Puerto Lleras;null;2878
+21247;Puerto López;null;2878
+21252;Puerto Rico;null;2878
+21284;Restrepo;null;2878
+21347;San Carlos de Guaroa;null;2878
+21373;San Juan de Arama;null;2878
+149252;San Juanito;null;2878
+21385;San Martín;null;2878
+149259;Uribe;null;2878
+21612;Villavicencio;null;2878
+21616;Vistahermosa;null;2878
+20503;Aldana;null;2897
+20517;Ancuya;null;2897
+20539;Arboleda;null;2897
+20565;Barbacoas;null;2897
+20582;Belén;null;2897
+20611;Buesaco;null;2897
+20674;Chachagüí;null;2897
+20722;Colón;null;2897
+20730;Consaca;null;2897
+20732;Contadero;null;2897
+20769;Córdoba;null;2897
+20748;Cuaspud;null;2897
+20756;Cumbal;null;2897
+20757;Cumbitara;null;2897
+20801;El Charco;null;2897
+20816;El Peñol;null;2897
+20827;El Rosario;null;2897
+20829;El Tablón de Gómez;null;2897
+20832;El Tambo;null;2897
+20858;Francisco Pizarro;null;2897
+20865;Funes;null;2897
+20899;Guachucal;null;2897
+20904;Guaitarilla;null;2897
+20905;Gualmatán;null;2897
+20946;Iles;null;2897
+20947;Imués;null;2897
+20950;Ipiales;null;2897
+20978;La Cruz;null;2897
+20984;La Florida;null;2897
+20989;La Llanada;null;2897
+21005;La Tola;null;2897
+21008;La Unión;null;2897
+21024;Leiva;null;2897
+21029;Linares;null;2897
+21032;Los Andes;null;2897
+21189;Magüí Payán;null;2897
+21054;Mallama;null;2897
+21108;Mosquera;null;2897
+21125;Nariño;null;2897
+21150;Olaya Herrera;null;2897
+21155;Ospina;null;2897
+21184;Pasto;null;2897
+21216;Policarpa;null;2897
+21221;Potosí;null;2897
+149246;Providencia;null;2897
+21230;Puerres;null;2897
+21262;Pupiales;null;2897
+21288;Ricaurte;null;2897
+21297;Roberto Payán;null;2897
+21325;Samaniego;null;2897
+21341;San Bernardo;null;2897
+21365;San José de Albán;null;2897
+21378;San Lorenzo;null;2897
+21392;San Pablo;null;2897
+21398;San Pedro de Cartago;null;2897
+21410;Sandoná;null;2897
+21413;Santa Bárbara;null;2897
+21431;Santacruz;null;2897
+21443;Sapuyes;null;2897
+21509;Taminango;null;2897
+21510;Tangua;null;2897
+21552;Tumaco;null;2897
+21564;Túquerres;null;2897
+21620;Yacuanquer;null;2897
+20486;Abrego;null;2877
+20540;Arboledas;null;2877
+20594;Bochalema;null;2877
+20604;Bucarasica;null;2877
+20620;Cachirá;null;2877
+20765;Cácota;null;2877
+20689;Chinácota;null;2877
+20697;Chitagá;null;2877
+20734;Convención;null;2877
+20772;Cúcuta;null;2877
+20753;Cucutilla;null;2877
+20784;Durania;null;2877
+20793;El Carmen;null;2877
+20833;El Tarra;null;2877
+20834;El Zulia;null;2877
+20891;Gramalote;null;2877
+20934;Hacarí;null;2877
+20940;Herrán;null;2877
+20982;La Esperanza;null;2877
+21001;La Playa;null;2877
+21017;Labateca;null;2877
+21035;Los Patios;null;2877
+21037;Lourdes;null;2877
+21122;Mutiscua;null;2877
+21146;Ocaña;null;2877
+21176;Pamplona;null;2877
+21177;Pamplonita;null;2877
+21255;Puerto Santander;null;2877
+21277;Ragonvalia;null;2877
+21320;Salazar;null;2877
+21344;San Calixto;null;2877
+21349;San Cayetano;null;2877
+21436;Santiago;null;2877
+21445;Sardinata;null;2877
+21455;Silos;null;2877
+149256;Teorama;null;2877
+21526;Tibú;null;2877
+21538;Toledo;null;2877
+149260;Villa Caro;null;2877
+21601;Villa del Rosario;null;2877
+20721;Colón;null;2896
+21089;Mocoa;null;2896
+21152;Orito;null;2896
+21233;Puerto Asís;null;2896
+149248;Puerto Caicedo;null;2896
+21243;Puerto Guzmán;null;2896
+21244;Puerto Leguízamo;null;2896
+21356;San Francisco;null;2896
+21389;San Miguel;null;2896
+21435;Santiago;null;2896
+21454;Sibundoy;null;2896
+21581;Valle del Guamuez;null;2896
+21602;Villagarzón;null;2896
+20550;Armenia;null;2874
+20607;Buenavista;null;2874
+20629;Calarca;null;2874
+20709;Circasia;null;2874
+20771;Córdoba;null;2874
+20845;Filandia;null;2874
+20930;Génova;null;2874
+21004;La Tebaida;null;2874
+21100;Montenegro;null;2874
+21204;Pijao;null;2874
+21273;Quimbaya;null;2874
+21322;Salento;null;2874
+20531;Apía;null;2879
+20563;Balboa;null;2879
+20585;Belén de Umbría;null;2879
+20782;Dosquebradas;null;2879
+20926;Guática;null;2879
+20975;La Celia;null;2879
+21016;La Virginia;null;2879
+21070;Marsella;null;2879
+21087;Mistrató;null;2879
+21195;Pereira;null;2879
+21226;Pueblo Rico;null;2879
+21274;Quinchía;null;2879
+21424;Santa Rosa de Cabal;null;2879
+21442;Santuario;null;2879
+20493;Aguada;null;2901
+20497;Albania;null;2901
+20535;Aratoca;null;2901
+20567;Barbosa;null;2901
+20568;Barichara;null;2901
+20570;Barrancabermeja;null;2901
+20590;Betulia;null;2901
+20597;Bolívar;null;2901
+20603;Bucaramanga;null;2901
+20616;Cabrera;null;2901
+20635;California;null;2901
+20647;Capitanejo;null;2901
+20651;Carcasí;null;2901
+20668;Cepitá;null;2901
+20671;Cerrito;null;2901
+20679;Charalá;null;2901
+20680;Charta;null;2901
+20684;Chima;null;2901
+20692;Chipatá;null;2901
+20708;Cimitarra;null;2901
+20725;Concepción;null;2901
+20729;Confines;null;2901
+20733;Contratación;null;2901
+20738;Coromoro;null;2901
+20760;Curití;null;2901
+20797;El Carmen de Chucurí;null;2901
+20809;El Guacamayo;null;2901
+20819;El Peñón;null;2901
+20822;El Playón;null;2901
+20836;Encino;null;2901
+20837;Enciso;null;2901
+20853;Florián;null;2901
+20852;Floridablanca;null;2901
+20878;Galán;null;2901
+20881;Gambita;null;2901
+20889;Girón;null;2901
+20895;Guaca;null;2901
+20902;Guadalupe;null;2901
+20910;Guapotá;null;2901
+20919;Guavatá;null;2901
+20932;Güepsa;null;2901
+20936;Hato;null;2901
+20964;Jesús María;null;2901
+20965;Jordán;null;2901
+20971;La Belleza;null;2901
+20996;La Paz;null;2901
+21019;Landázuri;null;2901
+21021;Lebrija;null;2901
+21036;Los Santos;null;2901
+21043;Macaravita;null;2901
+21124;Málaga;null;2901
+21073;Matanza;null;2901
+21090;Mogotes;null;2901
+21091;Molagavita;null;2901
+21145;Ocamonte;null;2901
+21147;Oiba;null;2901
+21151;Onzaga;null;2901
+21170;Palmar;null;2901
+21172;Palmas del Socorro;null;2901
+21269;Páramo;null;2901
+21199;Piedecuesta;null;2901
+21206;Pinchote;null;2901
+21229;Puente Nacional;null;2901
+21250;Puerto Parra;null;2901
+21259;Puerto Wilches;null;2901
+21292;Rionegro;null;2901
+21308;Sabana de Torres;null;2901
+21332;San Andrés;null;2901
+21339;San Benito;null;2901
+21359;San Gil;null;2901
+21363;San Joaquín;null;2901
+21367;San José de Miranda;null;2901
+21388;San Miguel;null;2901
+21408;San Vicente de Chucurí;null;2901
+21412;Santa Bárbara;null;2901
+149249;Santa Helena Del Opón;null;2901
+21458;Simacota;null;2901
+21468;Socorro;null;2901
+21484;Suaita;null;2901
+21488;Sucre;null;2901
+21493;Suratá;null;2901
+21540;Tona;null;2901
+21579;Valle de San José;null;2901
+21618;Vélez;null;2901
+21592;Vetas;null;2901
+21606;Villanueva;null;2901
+21630;Zapatoca;null;2901
+149239;Buenavista;null;2902
+20623;Caimito;null;2902
+20676;Chalán;null;2902
+20719;Coloso;null;2902
+20739;Corozal;null;2902
+20744;Coveñas;null;2902
+20825;El Roble;null;2902
+20877;Galeras;null;2902
+20912;Guaranda;null;2902
+21007;La Unión;null;2902
+21034;Los Palmitos;null;2902
+21052;Majagual;null;2902
+21107;Morroa;null;2902
+21157;Ovejas;null;2902
+21174;Palmito;null;2902
+21327;Sampués;null;2902
+21340;San Benito Abad;null;2902
+21374;San Juan de Betulia;null;2902
+21382;San Luis de Sincé;null;2902
+21383;San Marcos;null;2902
+21391;San Onofre;null;2902
+21395;San Pedro;null;2902
+21438;Santiago de Tolú;null;2902
+21461;Sincelejo;null;2902
+21487;Sucre;null;2902
+21539;Tolú Viejo;null;2902
+20508;Alpujarra;null;2883
+20511;Alvarado;null;2883
+20514;Ambalema;null;2883
+20528;Anzoátegui;null;2883
+20552;Armero;null;2883
+20556;Ataco;null;2883
+20624;Cajamarca;null;2883
+20654;Carmen de Apicalá;null;2883
+20664;Casabianca;null;2883
+20678;Chaparral;null;2883
+20717;Coello;null;2883
+20745;Coyaima;null;2883
+20758;Cunday;null;2883
+20779;Dolores;null;2883
+20841;Espinal;null;2883
+20843;Falan;null;2883
+20847;Flandes;null;2883
+20860;Fresno;null;2883
+20908;Guamo;null;2883
+20941;Herveo;null;2883
+20943;Honda;null;2883
+20944;Ibagué;null;2883
+20945;Icononzo;null;2883
+21039;Lérida;null;2883
+21040;Líbano;null;2883
+21079;Melgar;null;2883
+21119;Murillo;null;2883
+21128;Natagaima;null;2883
+21154;Ortega;null;2883
+21175;Palocabildo;null;2883
+21201;Piedras;null;2883
+21212;Planadas;null;2883
+21223;Prado;null;2883
+21264;Purificación;null;2883
+21289;Rioblanco;null;2883
+21299;Roncesvalles;null;2883
+21302;Rovira;null;2883
+21321;Saldaña;null;2883
+21337;San Antonio;null;2883
+21379;San Luis;null;2883
+21405;San Sebastián de Mariquita;null;2883
+21419;Santa Isabel;null;2883
+21500;Suárez;null;2883
+21580;Valle de San Juan;null;2883
+21586;Venadillo;null;2883
+21604;Villahermosa;null;2883
+21611;Villarrica;null;2883
+20502;Alcalá;null;2904
+20519;Andalucía;null;2904
+20526;Ansermanuevo;null;2904
+20546;Argelia;null;2904
+20598;Bolívar;null;2904
+20605;Buenaventura;null;2904
+20612;Bugalagrande;null;2904
+20622;Caicedonia;null;2904
+20634;Cali;null;2904
+20636;Calima;null;2904
+20644;Candelaria;null;2904
+20661;Cartago;null;2904
+20774;Dagua;null;2904
+20835;El Águila;null;2904
+20789;El Cairo;null;2904
+20800;El Cerrito;null;2904
+20806;El Dovio;null;2904
+20851;Florida;null;2904
+20884;Ginebra;null;2904
+20897;Guacarí;null;2904
+20900;Guadalajara de Buga;null;2904
+20958;Jamundí;null;2904
+20979;La Cumbre;null;2904
+21006;La Unión;null;2904
+21013;La Victoria;null;2904
+21144;Obando;null;2904
+21173;Palmira;null;2904
+21222;Pradera;null;2904
+21285;Restrepo;null;2904
+21290;Riofrío;null;2904
+21298;Roldanillo;null;2904
+21397;San Pedro;null;2904
+21451;Sevilla;null;2904
+21544;Toro;null;2904
+21549;Trujillo;null;2904
+21551;Tuluá;null;2904
+21567;Ulloa;null;2904
+21591;Versalles;null;2904
+21596;Vijes;null;2904
+21627;Yotoco;null;2904
+21628;Yumbo;null;2904
+21633;Zarzal;null;2904
+20663;Caruru;null;2885
+21088;Mitú;null;2885
+21160;Pacoa;null;2885
+21181;Papunaua;null;2885
+21511;Taraira;null;2885
+21623;Yavaraté;null;2885
+20755;Cumaribo;null;2894
+21002;La Primavera;null;2894
+21237;Puerto Carreño;null;2894
+21428;Santa Rosalia;null;2894

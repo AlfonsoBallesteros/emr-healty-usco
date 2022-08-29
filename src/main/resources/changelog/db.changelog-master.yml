@@ -1,0 +1,3 @@
+databaseChangeLog:
+  - include:
+      file: classpath*:/changelog/changes/20220512-V0.0.1__Init_db.xml
