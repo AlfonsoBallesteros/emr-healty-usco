@@ -20,6 +20,8 @@ public class DiagnosisDTO {
 
     private UUID appointmentId;
 
+    private AppointmentDTO appointment;
+
     private Set<MedicineDTO> medicine;
 
     @Override

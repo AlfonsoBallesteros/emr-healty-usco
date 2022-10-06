@@ -32,6 +32,11 @@ public class AppointmentDTO {
 
     private UUID officeId;
 
+    private UserDTO user;
+
+    private UserDTO doctor;
+
+    private OfficeDTO office;
 
     public UUID getOfficeId() {
         return officeId;

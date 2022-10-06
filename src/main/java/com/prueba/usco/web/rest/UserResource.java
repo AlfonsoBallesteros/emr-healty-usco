@@ -91,7 +91,7 @@ public class UserResource {
 
     @PostMapping("/office")
     @PreAuthorize("hasAuthority(\"" + AuthoritiesConstants.ADMIN + "\")")
-    public ResponseEntity<OfficeDTO> createUser(@RequestBody CreateOfficeInput officeInput) throws URISyntaxException {
+    public ResponseEntity<OfficeDTO> createOffice(@RequestBody CreateOfficeInput officeInput) throws URISyntaxException {
         log.debug("REST request to save User : {}", officeInput);
         OfficeDTO officeDTO = OfficeDTO.builder()
                 .code(RandomStringUtils.randomAlphanumeric(5).toUpperCase())
@@ -105,7 +105,7 @@ public class UserResource {
 
     @PostMapping("/appointment")
     @PreAuthorize("hasAuthority(\"" + AuthoritiesConstants.ADMIN + "\")")
-    public ResponseEntity<AppointmentDTO> createUser(@RequestBody CreateAppointmentInput appointmentInput) throws URISyntaxException {
+    public ResponseEntity<AppointmentDTO> createAppointment(@RequestBody CreateAppointmentInput appointmentInput) throws URISyntaxException {
         log.debug("REST request to save User : {}", appointmentInput);
         AppointmentDTO appointmentDTO = AppointmentDTO.builder()
                 .code(RandomStringUtils.randomAlphanumeric(8).toUpperCase())
@@ -135,6 +135,18 @@ public class UserResource {
         }
 
         final Page<UserDTO> page = userService.getAllManagedUsers(pageable);
+        return new ResponseEntity<>(page.getContent(), HttpStatus.OK);
+    }
+
+    @GetMapping("/offices")
+    @PreAuthorize("hasAuthority(\"" + AuthoritiesConstants.ADMIN + "\")")
+    public ResponseEntity<List<OfficeDTO>> getAllOffice(Pageable pageable) {
+        log.debug("REST request to get all User for an admin");
+        if (!onlyContainsAllowedProperties(pageable)) {
+            return ResponseEntity.badRequest().build();
+        }
+
+        final Page<OfficeDTO> page = officeService.getAll(pageable);
         return new ResponseEntity<>(page.getContent(), HttpStatus.OK);
     }
 

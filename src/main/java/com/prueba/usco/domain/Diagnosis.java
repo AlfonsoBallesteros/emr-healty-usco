@@ -43,7 +43,7 @@ public class Diagnosis extends AbstractAuditingEntity implements Serializable {
     private Appointment appointment;
 
     @JsonIgnore
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
             name = "diagnosis_medicine",
             joinColumns = { @JoinColumn(name = "diagnosis_id", referencedColumnName = "id") },

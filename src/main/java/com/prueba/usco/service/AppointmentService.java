@@ -29,9 +29,9 @@ public class AppointmentService {
 
     public AppointmentDTO save(AppointmentDTO appointmentDTO) {
         log.debug("Request to save debt : {}", appointmentDTO);
-        Appointment debt = appointmentMapper.toEntity(appointmentDTO);
-        debt = appointmentRepository.save(debt);
-        return appointmentMapper.toDto(debt);
+        Appointment appointment = appointmentMapper.toEntity(appointmentDTO);
+        appointment = appointmentRepository.save(appointment);
+        return appointmentMapper.toDto(appointment);
     }
 
     @Transactional(readOnly = true)

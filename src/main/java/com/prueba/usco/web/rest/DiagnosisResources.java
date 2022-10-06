@@ -11,11 +11,13 @@ import lombok.AllArgsConstructor;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URISyntaxException;
+import java.util.List;
 import java.util.UUID;
 
 @RestController
@@ -28,16 +30,15 @@ public class DiagnosisResources {
     private final DiagnosisService diagnosisService;
 
     @GetMapping("/diagnosis/{diagnosis-id}")
-    public ResponseEntity<DiagnosisDTO> getOneDiagnosis(@PathVariable("diagnosis-id") String id) throws URISyntaxException {
+    public ResponseEntity<List<DiagnosisDTO>> getOneDiagnosis(@PathVariable("diagnosis-id") String id) throws URISyntaxException {
         log.debug("REST request to save User : {}", id);
 
-        return diagnosisService.findBy(UUID.fromString(id)).map(ResponseEntity::ok)
-                .orElseGet(() -> ResponseEntity.noContent().build());
+        return new ResponseEntity<>(diagnosisService.findByAppointmentId(UUID.fromString(id)), HttpStatus.OK);
     }
 
     @PostMapping("/diagnosis")
     @PreAuthorize("hasAuthority(\"" + AuthoritiesConstants.DOCTOR + "\")")
-    public ResponseEntity<DiagnosisDTO> createUser(@RequestBody DiagnosisDTO diagnosisDTO) throws URISyntaxException {
+    public ResponseEntity<DiagnosisDTO> createDiagnosis(@RequestBody DiagnosisDTO diagnosisDTO) throws URISyntaxException {
         log.debug("REST request to save User : {}", diagnosisDTO);
         return ResponseEntity
                 .ok()

@@ -1,10 +1,13 @@
 package com.prueba.usco.web.rest;
 
 import com.prueba.usco.security.AuthoritiesConstants;
+import com.prueba.usco.service.AppointmentQueryService;
 import com.prueba.usco.service.AppointmentService;
 import com.prueba.usco.service.UserService;
+import com.prueba.usco.service.criteria.AppointmentCriteria;
 import com.prueba.usco.service.dto.AppointmentDTO;
 import com.prueba.usco.service.dto.UserDTO;
+import com.prueba.usco.service.filter.UUIDFilter;
 import com.prueba.usco.web.rest.input.CanceledAppointmentInput;
 import com.prueba.usco.web.rest.input.CreateAppointmentInput;
 import lombok.AllArgsConstructor;
@@ -29,15 +32,28 @@ public class AppointmentResource {
 
     private final AppointmentService appointmentService;
 
+    private final AppointmentQueryService appointmentQueryService;
+
     private final UserService userService;
 
     @GetMapping("/appointments")
-    public ResponseEntity<List<AppointmentDTO>> getAllAppointment(@PageableDefault(size = 10) Pageable pageable) {
+    public ResponseEntity<List<AppointmentDTO>> getAllAppointment(AppointmentCriteria criteria, @PageableDefault(size = 10) Pageable pageable) {
+        log.debug("REST request to get appointments by criteria: {}", criteria);
         return userService
                 .getUserWithAuthorities()
                 .map(UserDTO::new)
-                .map(UserDTO::getId)
-                .map(u -> ResponseEntity.ok().body(appointmentService.findAll(u, pageable)))
+                .map(u -> {
+                    UUIDFilter uuidFilter = new UUIDFilter();
+                    if (u.getAuthorities().contains("ROLE_USER")){
+                        uuidFilter.setEquals(u.getId());
+                        criteria.setUserId(uuidFilter);
+                    }else{
+                        uuidFilter.setEquals(u.getId());
+                        criteria.setDoctorId(uuidFilter);
+                    }
+                    return u;
+                })
+                .map(u -> ResponseEntity.ok().body(appointmentQueryService.findByCriteria(criteria, pageable).getContent()))
                 .orElseGet(() -> ResponseEntity.noContent().build());
     }
 

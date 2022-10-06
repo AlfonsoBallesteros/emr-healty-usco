@@ -25,6 +25,8 @@ public class OfficeDTO{
 
     private Long cityId;
 
+    private CityDepartmentDTO city;
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
